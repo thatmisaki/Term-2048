@@ -3,38 +3,34 @@ name:               hs-game
 version:            0.1.0.0
 
 -- A short (one-line) description of the package.
--- synopsis:
+synopsis:           A game of 2048 that runs in the terminal.
 
 -- A longer description of the package.
--- description:
+description:        An implementation of the game 2048 written to be
+                    played within the terminal. This project serves to
+                    be something of a developmental playground, to
+                    experiment with functional style and application of
+                    best practices within Haskell.
 
 -- A URL where users can report bugs.
 -- bug-reports:
 
 -- The license under which the package is released.
--- license:
+license:            MIT
 author:             JustMisaki
 maintainer:         thatmisakidev@outlook.com
 
 -- A copyright notice.
 -- copyright:
--- category:
-extra-source-files: CHANGELOG.md
+category:           Experimental
+extra-source-files: .gitignore,
+                    README.md,
+                    LICENSE
 
--- library
---     exposed-modules:  Scene.Scene
---                       IO.Environ
---                       IO.Runner
-    
---     build-depends:    base ^>=4.16.4.0
---     hs-source-dirs:   src
---     default-language: Haskell2010
-
-executable hs-game
+executable term-2048
     main-is:          Main.hs
 
     build-depends:    base ^>=4.16.4.0,
                       transformers ^>=0.5.6.2,
-                    --   hs-game
     hs-source-dirs:   app
     default-language: Haskell2010
